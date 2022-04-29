@@ -5,7 +5,7 @@ AddEventHandler('cr-trader:client:BaseElectronicsMenu', function()
             local myMenu = {
                 {
                     id = 1,
-                    header = 'Electronics Trader'
+                    header = Config.Peds[k].PedName..' The Trader'
                 },
                 {
                     id = 2,
