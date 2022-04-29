@@ -13,7 +13,6 @@ This Resource is setup for you to have an NPC that would be used to further Trad
 
 Dependencies:
 - [qb-target](https://github.com/Renewed-Scripts/qb-target)
-- [ms-peds](https://github.com/MiddleSkillz/ms-peds)
 - [qb-menu](https://github.com/qbcore-framework/qb-menu)
 
 -- Place into qb-core/shared/items.lua
@@ -47,15 +46,4 @@ Dependencies:
     ["telescope"] = {    ["name"] = "telescope",    ["label"] = "Telescope",    ["weight"] = 8500,    ["type"] = "item",    ["image"] = "telescope.png",    ["unique"] = false,    ["useable"] = true,    ["shouldClose"] = true,    ["combinable"] = nil,    ["description"] = "A stolen Telescope."},
     ["coffeemaker"] = {    ["name"] = "coffeemaker",    ["label"] = "Coffee Maker",    ["weight"] = 25000,    ["type"] = "item",    ["image"] = "coffeemaker.png",    ["unique"] = false,    ["useable"] = true,    ["shouldClose"] = true,    ["combinable"] = nil,    ["description"] = "A stolen Coffee Machine."},
     ["gameboy"] = {    ["name"] = "gameboy",    ["label"] = "Gameboy",    ["weight"] = 200,    ["type"] = "item",    ["image"] = "gameboy.png",    ["unique"] = false,    ["useable"] = true,    ["shouldClose"] = true,    ["combinable"] = nil,    ["description"] = "A working Gameboy."},
-```
-
-Place into ms-peds/config.lua
-```
-	-- Electronics Trader
-
-	{
-		model = `cs_jimmydisanto`, -- Model name as a hash.
-		coords = vector4(1126.3740, -471.7325, 66.4872, 76.4781),
-		gender = 'male', -- The gender of the ped, used for the CreatePed native.
-	},
 ```
