@@ -112,19 +112,16 @@ Citizen.CreateThread(function()
 end)
 
 local function ActivatePedTarget(ped, k)
-    if Config.Target == "QB" then
-        exports['qb-target']:AddTargetEntity(ped, {
-            options = {
-                {
-                    type = "client",
-                    event = "cr-trader:client:BaseElectronicsMenu",
-                    icon = "fas fa-laptop-medical",
-                    label = "Speak with "..Config.Peds[k].PedName,
-                    ped = k
-
-                },
+    exports['qb-target']:AddTargetEntity(ped, {
+        options = {
+            {
+                type = "client",
+                event = "cr-trader:client:BaseElectronicsMenu",
+                icon = "fas fa-laptop-medical",
+                label = "Speak with "..Config.Peds[k].PedName,
+                ped = k
             },
-            distance = 3.0
-        })
-    end
+        },
+        distance = 3.0
+    })
 end
