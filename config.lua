@@ -16,3 +16,35 @@ Config.Peds = {
         PedName = "Jimmy", -- Ped Name
     },
 }
+
+Config.BatteryTrade = {
+    ["electronics"] = 11,
+    ["lithium"] = 3
+}
+
+Config.TVTrade = {
+    ["electronics"] = 33,
+}
+
+Config.TeleTrade = {
+    ["electronics"] = 17,
+    ["metalscrap"] = 8
+}
+
+Config.MicroTrade = {
+    ["electronics"] = 23,
+    ["lithium"] = 7
+}
+
+Config.CoffeeTrade = {
+    ["electronics"] = 28,
+}
+
+Config.ElecKitTrade = {
+    ["electronics"] = 17,
+    ["lithium"] = 3
+}
+
+Config.GameboyTrade = {
+    ["electronics"] = 57,
+}
