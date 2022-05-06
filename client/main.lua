@@ -8,7 +8,7 @@ AddEventHandler('cr-trader:client:BaseElectronicsMenu', function()
                 {
                     id = 2,
                     header = "Trade Batteries",
-                    txt = "x1 Battery = x11 Electronics & x3 Lithium",
+                    txt = "x1 Battery = "..Config.BatteryTrade["electronics"].." Electronics & "..Config.BatteryTrade["lithium"].." Lithium.",
                     params = {
                         event = "cr-trader:client:TradePrevention", --- event name
                     }
@@ -16,7 +16,7 @@ AddEventHandler('cr-trader:client:BaseElectronicsMenu', function()
 				{
                     id = 3,
                     header = "Trade TV",
-                    txt = "x1 TV = x33 Electronics",
+                    txt = "x1 TV = "..Config.TVTrade["electronics"].." Electronics.",
                     params = {
                         event = "cr-trader:client:TradePrevention", --- event name
                     }
@@ -24,7 +24,7 @@ AddEventHandler('cr-trader:client:BaseElectronicsMenu', function()
 				{
                     id = 4,
                     header = "Trade Telescope",
-                    txt = "x1 Telescope = x17 Electronics & x8 Metal",
+                    txt = "x1 Telescope = "..Config.TeleTrade["electronics"].." Electronics & "..Config.TeleTrade["metalscrap"].." Metal Scrap.",
                     params = {
                         event = "cr-trader:client:TradePrevention", --- event name
                     }
@@ -32,7 +32,7 @@ AddEventHandler('cr-trader:client:BaseElectronicsMenu', function()
 				{
                     id = 5,
                     header = "Trade Microwave",
-                    txt = "x1 Microwave = x23 Electronics & x7 Lithium",
+                    txt = "x1 Microwave = "..Config.MicroTrade["electronics"].." Electronics & "..Config.MicroTrade["lithium"].." Lithium.",
                     params = {
                         event = "cr-trader:client:TradePrevention", --- event name
                     }
@@ -40,7 +40,7 @@ AddEventHandler('cr-trader:client:BaseElectronicsMenu', function()
 				{
                     id = 6,
                     header = "Trade CoffeeMaker",
-                    txt = "x1 CoffeeMaker = x28 Electronics",
+                    txt = "x1 CoffeeMaker = "..Config.CoffeeTrade["electronics"].." Electronics.",
                     params = {
                         event = "cr-trader:client:TradePrevention", --- event name
                     }
@@ -48,7 +48,7 @@ AddEventHandler('cr-trader:client:BaseElectronicsMenu', function()
 				{
                     id = 7,
                     header = "Trade Electronickit",
-                    txt = "x1 Electronic Kit = x17 Electronics & x3 Lithium",
+                    txt = "x1 Electronic Kit = "..Config.ElecKitTrade["electronics"].." Electronics & "..Config.ElecKitTrade["lithium"].." Lithium.",
                     params = {
                         event = "cr-trader:client:TradePrevention", --- event name
                     }
@@ -56,7 +56,7 @@ AddEventHandler('cr-trader:client:BaseElectronicsMenu', function()
 				{
                     id = 8,
                     header = "Trade GameBoy",
-                    txt = "x1 GameBoy = x57 Electronics",
+                    txt = "x1 GameBoy = "..Config.GameboyTrade["electronics"].." Electronics.",
                     params = {
                         event = "cr-trader:client:TradePrevention", --- event name
                     }
