@@ -1,11 +1,9 @@
-local QBCore = exports['qb-core']:GetCoreObject()
-
 RegisterNetEvent('cr-trader:client:BaseElectronicsMenu')
 AddEventHandler('cr-trader:client:BaseElectronicsMenu', function()
             local myMenu = {
                 {
                     id = 1,
-                    header = Config.Peds[k].PedName..' The Trader'
+                    header = Config.Peds[1].PedName..' The Trader'
                 },
                 {
                     id = 2,
@@ -78,6 +76,21 @@ AddEventHandler('cr-trader:client:TradePrevention', function()
 	TriggerServerEvent("cr-trader:server:Trade")
 end)
 
+local function ActivatePedTarget(ped, k)
+    exports['qb-target']:AddTargetEntity(ped, {
+        options = {
+            {
+                type = "client",
+                event = "cr-trader:client:BaseElectronicsMenu",
+                icon = "fas fa-laptop-medical",
+                label = "Speak with "..Config.Peds[k].PedName,
+                ped = k
+            },
+        },
+        distance = 3.0
+    })
+end
+
 Citizen.CreateThread(function()
     for k, v in pairs(Config.Peds) do
         RequestModel(v.ped)
@@ -110,18 +123,3 @@ Citizen.CreateThread(function()
         Wait(100)
     end
 end)
-
-local function ActivatePedTarget(ped, k)
-    exports['qb-target']:AddTargetEntity(ped, {
-        options = {
-            {
-                type = "client",
-                event = "cr-trader:client:BaseElectronicsMenu",
-                icon = "fas fa-laptop-medical",
-                label = "Speak with "..Config.Peds[k].PedName,
-                ped = k
-            },
-        },
-        distance = 3.0
-    })
-end
