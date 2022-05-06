@@ -71,4 +71,5 @@ AddEventHandler("cr-trader:server:Trade", function()
         elseif Config.Notifications == 'mythic' then
             TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'You don\'t have the proper Assets on you...' })
         end
+    end
 end)
